@@ -9,5 +9,5 @@ export class AppComponent {
   range = function(n) {
 	return new Array(n);
   }
-  size = 4
+  size = 3
 }
