@@ -1,6 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    Welcome to Connect {{ size }}
   </h1>
+  <div id="board">
+	  <div class="row" *ngFor="let row of range(size) as rows; index as r;">
+		<div class="cell" *ngFor="let column of range(size) as columns; index as c;"></div>
+	  </div>
+  </div>
 </div>

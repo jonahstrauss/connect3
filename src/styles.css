@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+h1 {
+	color:green;
+	font-size:50pt;
+	font-weight:100;
+	background-color:orange;
+}
+
+body {
+	background-color:blue;
+}
+
+div#board {
+	font-size:25pt;
+}
+
+div.cell {
+	border-style:solid;
+	border-color:black;
+	border-size:1px;
+	width:125px;
+	height:125px;
+}
+
+div.row {
+	float:left;
+}

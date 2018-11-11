@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'tic-tac-toe';
+  range = function(n) {
+	return new Array(n);
+  }
+  size = 4
 }
