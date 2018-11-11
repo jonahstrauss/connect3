@@ -5,7 +5,9 @@
   </h1>
   <div id="board">
 	  <div class="row" *ngFor="let row of range(size) as rows; index as r;">
-		<div class="cell" *ngFor="let column of range(size) as columns; index as c;"></div>
+		<div class="cell" [ngClass]="{'display': true, 'odd': (Math.abs(r - c) % 2)}" *ngFor="let column of range(size) as columns; index as c;">
+		        
+		</div>
 	  </div>
   </div>
 </div>

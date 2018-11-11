@@ -15,13 +15,20 @@ div#board {
 }
 
 div.cell {
-	border-style:solid;
-	border-color:black;
-	border-size:1px;
 	width:125px;
 	height:125px;
 }
 
 div.row {
 	float:left;
+}
+
+div.display.odd {
+	background-color:red;
+	color:black;
+}
+
+div.display:not(.odd) {
+	background-color: black;
+	color:red;
 }

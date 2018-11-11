@@ -10,4 +10,5 @@ export class AppComponent {
 	return new Array(n);
   }
   size = 3
+  Math = window.Math
 }
