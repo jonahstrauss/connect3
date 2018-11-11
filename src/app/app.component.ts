@@ -9,6 +9,6 @@ export class AppComponent {
   range = function(n) {
 	return new Array(n);
   }
-  size = 3
+  size = 4
   Math = window.Math
 }
