@@ -25,10 +25,16 @@ div.row {
 
 div.display.odd {
 	background-color:red;
-	color:black;
 }
 
 div.display:not(.odd) {
 	background-color: black;
-	color:red;
+}
+
+div.display.purple {
+	color: purple;
+}
+
+div.display.brown {
+	color: brown;
 }

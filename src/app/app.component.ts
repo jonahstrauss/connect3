@@ -10,5 +10,23 @@ export class AppComponent {
 	return new Array(n);
   }
   size = 4
-  Math = window.Math
+  abs = function(v) {
+	  if (v > 0) {
+		  return v
+	  } else {
+		  return -v
+	  }
+  }
+  board = null
+  getBoard = function(){
+	  if(!this.board){
+		  this.board = this.range(this.size)
+		  for(var i = 0; i < this.size; i++){
+			  this.board[i] = this.range(this.size)
+		  }
+		  this.board[0][0] = 'brown'
+		  this.board[1][1] = 'purple'
+	  }
+	  return this.board
+  }
 }

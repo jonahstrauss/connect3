@@ -5,8 +5,8 @@
   </h1>
   <div id="board">
 	  <div class="row" *ngFor="let row of range(size) as rows; index as r;">
-		<div class="cell" [ngClass]="{'display': true, 'odd': (Math.abs(r - c) % 2)}" *ngFor="let column of range(size) as columns; index as c;">
-		        
+		<div class="cell" [ngClass]="{'display': true, 'odd': (abs(r - c) % 2), 'brown': getBoard()[c][r] == 'brown', 'purple': getBoard()[c][r] == 'purple'}" *ngFor="let column of range(size) as columns; index as c;">
+		        {{getBoard()[c][r] ? 'X' : ''}}
 		</div>
 	  </div>
   </div>
