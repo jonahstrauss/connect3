@@ -27,4 +27,15 @@ export class AppComponent {
 	  }
 	  return this.board
   }
+  select(c, r){
+	  if(!this.board[c][r]){
+		this.board[c][r] = this.whosTurn
+		this.togglePlayer()
+		this.turn++
+	  }
+  }
+  togglePlayer() {
+	  this.whosTurn = this.whosTurn == 'brown' ? 'purple' : 'brown'
+  }
+  a = this.togglePlayer()
 }
