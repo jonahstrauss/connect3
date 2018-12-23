@@ -25,12 +25,19 @@ div.row {
 	float:left;
 }
 
+div.display {
+	border-style: solid;
+	border-width: 5px;
+}
+
 div.display.odd {
 	background-color:red;
+	border-color: red;
 }
 
 div.display:not(.odd) {
 	background-color: black;
+	border-color:black;
 }
 
 div.display.purple {
@@ -39,4 +46,12 @@ div.display.purple {
 
 div.display.brown {
 	color: brown;
+}
+
+div#board.purple div.display.empty:hover {
+	border-color:purple;
+}
+
+div#board.brown div.display.empty:hover {
+	border-color:brown;
 }

@@ -3,9 +3,9 @@
   <h1>
     Welcome to Connect {{ size - 1 }}
   </h1>
-  <div id="board">
+  <div id="board" [ngClass]="[whosTurn]">
 	  <div class="row" *ngFor="let row of range(size) as rows; index as r;">
-		<div class="cell" (click)="select(c,r)"  [ngClass]="{'display': true, 'odd': (abs(r - c) % 2), 'brown': getBoard()[c][r] == 'brown', 'purple': getBoard()[c][r] == 'purple'}" *ngFor="let column of range(size) as columns; index as c;">
+		<div class="cell" (click)="select(c,r)"  [ngClass]="{'display': true, 'odd': (abs(r - c) % 2), 'empty': !getBoard()[c][r], 'brown': getBoard()[c][r] == 'brown', 'purple': getBoard()[c][r] == 'purple'}" *ngFor="let column of range(size) as columns; index as c;">
 		        {{getBoard()[c][r] ? 'X' : ''}}
 		</div>
 	  </div>

@@ -31,9 +31,9 @@ export class AppComponent {
 	  if(!this.board[c][r]){
 		this.board[c][r] = this.whosTurn
 		this.togglePlayer()
-		this.turn++
 	  }
   }
+  whosTurn = undefined
   togglePlayer() {
 	  this.whosTurn = this.whosTurn == 'brown' ? 'purple' : 'brown'
   }
