@@ -24,8 +24,6 @@ export class AppComponent {
 		  for(var i = 0; i < this.size; i++){
 			  this.board[i] = this.range(this.size)
 		  }
-		  this.board[0][0] = 'brown'
-		  this.board[1][1] = 'purple'
 	  }
 	  return this.board
   }
